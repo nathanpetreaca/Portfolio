@@ -3,16 +3,118 @@
 <body text="#ff99ff">
 
 <style>
+html *
+{
+   font-size: 1em !important;
+   color: #ff99ff !important;
+   font-family: monospace !important;
+}
+
+
+
 body{
     background-image: url("./images/back.png");
 	background-size: 20%;
 	background-repeat: repeat;
   }
+  
+#myImg {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#myImg:hover {
+  opacity: 0.7;
+}
+
+
+.modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  padding-top: 100px;
+  /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0);
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.9);
+  /* Black w/ opacity */
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+.modal-content,
+#caption {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0)
+  }
+  to {
+    transform: scale(1)
+  }
+}
+
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .modal-content {
+    width: 100%;
+  }
+}
+
+
   </style>
     <title>My Portfolio</title>
   </head>
   <body>
-  <h1>My Portfolio</h1>
+  <h1>My Portfolio</h1>  <img src="./images/18.gif" width ="100px" ><br>
+
   <img src="./images/me.png" width ="400px" >
   <p>
   This is my portfolio. It has some pictures and some videos. They are mostly comical.
@@ -20,9 +122,306 @@ body{
   <p>
   I have been busy with school, sorry
   </p>
+  <h2>Instagram<h2>
+  <a href="https://instagram.com/nathan_ppp"> <img src="./images/Skull_57.gif" width ="100px" ></a>
   <h2>Pictures</h2>
-    <img src="./images/me.pngg" ><br>
-    <img src="./images/me.pngg" ><br>
+  <table style="width:100%">
+  <tr>
+  <td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0536.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+	</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0171.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+	</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0247.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+	</td>
+	
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0244.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+	</td>
+	
+	</tr>
+	<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0369.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0544.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0085.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0064.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/DSC_1820sm.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0505.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0507.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0409.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0447.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0426.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0530.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0410.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0312.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0446.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0532.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0476.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0465.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0113.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0472.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0422.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0419.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0214.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0407.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0457.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0504.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0317.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0314.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0311.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0074.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0322.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0326.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0327.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0368.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0291.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0150.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0494.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0441.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0297.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0294.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0306.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0367.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0440.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0385.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0440.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0523.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0528.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0499.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0198.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0200.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0195.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+		<img class ="myImages" id="myImg" img src="./images/IMG_0413.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+			</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0508.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0526.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0372.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0404.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0375.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0542.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0477.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0316.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0378.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0379.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0261.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0129.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0483.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0534.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0535.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+		<img class ="myImages" id="myImg" img src="./images/IMG_0082.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+			</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0418.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0427.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0519.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0501.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0502.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0522.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0489.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0495.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0531.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0058.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+		<tr>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0070.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0078.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0174.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+		</td>
+	<td>
+	<img class ="myImages" id="myImg" img src="./images/IMG_0460.jpg" alt="hey" style="width:100%;max-width:300px"><br>
+	</td>
+	</tr>
+	
+
+
+
+
+
+	
+
+
+
+		
+
+	
+	</table>
+
+
 	<p> I made this with a friend in less than an hour. I got really tired of coding </p>
 <iframe width="420" height="345" src="https://www.youtube.com/embed/eodDa0rBaSI">
 </iframe> <br>
@@ -31,6 +430,43 @@ They are cringy, yes, but I have been to busy with other things to make the bett
 As you can see they all have the same consistent style however that I think is unique. 
 These are just to show that I am not 100% incompetent when making a video. 
 I have gotten about 7x better than what you see. Also, I have gotten 10x better looking :( </pre>
-<iframe src="https://player.vimeo.com/video/366173310" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-<iframe src="https://player.vimeo.com/video/366173188" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/366173310" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><br>
+<iframe src="https://player.vimeo.com/video/366173188" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe><br>
+<img src="./images/bye.gif" width ="200px" >
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// create references to the modal...
+var modal = document.getElementById('myModal');
+// to all images -- note I'm using a class!
+var images = document.getElementsByClassName('myImages');
+// the image in the modal
+var modalImg = document.getElementById("img01");
+// and the caption in the modal
+var captionText = document.getElementById("caption");
+
+// Go through all of the images with our custom class
+for (var i = 0; i < images.length; i++) {
+  var img = images[i];
+  // and attach our click listener for this image.
+  img.onclick = function(evt) {
+    console.log(evt);
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
+}
+
+var span = document.getElementsByClassName("close")[0];
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+</script>
 </body></html>
